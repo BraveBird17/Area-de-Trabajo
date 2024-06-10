@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcadores</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylesHyS.css">
+    <link rel="stylesheet" href="css/cssDaily.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	
+</head>
+<body>
+
+<div class="tab-container">
+    <div class="tab-header">
+        <div class="logo-container">
+            <img src="images/NTT_Data-Logo.wine.png" alt="NTT Data Logo">
+        </div>
+        <div class="tab-link" data-tab="plataformas">Plataformas</div>
+        <div class="tab-link" data-tab="contraseñas">Contraseñas</div>
+        <div class="tab-link" data-tab="daily">Daily</div>
+    </div>
+
+    <div id="plataformas" class="tab-content">
+        <h1>Plataformas</h1>
+        <div class="platform">
+            <div class="platform-header">
+                <img src="images/wl12.png" alt="Plataforma WL12" class="platform-logo">
+                <span>Plataforma WL12</span>
+                <button class="toggle-expand"><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <div class="platform-content" style="display: none;">
+                <div class="platform-tabs">
+                    <button class="platform-tab active" data-tab="pro">PRO</button>
+                    <button class="platform-tab" data-tab="pre">PRE</button>
+                </div>
+                <div class="platform-tab-content" id="pro" style="display: block;">
+                    <ul>
+                        <li><strong>Revisión:</strong> <a href="https://intranet.aoc.cat/pages/viewpage.action?pageId=41520946">URL de ejemplo</a></li>
+                        <li><strong>Reinicio:</strong> <a href="https://intranet.aoc.cat/display/SII/PCI3+-+WL12+-+Reinici">URL de ejemplo</a></li>
+                        <li><strong>Splunk:</strong> <a href="http://10.120.1.235/en-US/account/login?return_to=%2Fen-US%2Fapp%2FSOA%2Fmonitors_rendiment">URL de ejemplo</a></li>
+                        <li><strong>Despliegue:</strong> <a href="https://intranet.aoc.cat/display/SII/PCI3+-+WL12+-+Desplegament">URL de ejemplo</a></li>
+                    </ul>
+                </div>
+                <div class="platform-tab-content" id="pre" style="display: none;">
+                    <ul>
+                        <li><strong>Revisión:</strong> <a href="https://intranet.aoc.cat/pages/viewpage.action?pageId=41520946">URL de ejemplo</a></li>
+                        <li><strong>Reinicio:</strong> <a href="https://intranet.aoc.cat/display/SII/PCI3+-+WL12+-+Reinici">URL de ejemplo</a></li>
+                        <li><strong>Splunk:</strong> No tiene Splunk en PRE.</li>
+                        <li><strong>Despliegue:</strong> <a href="https://intranet.aoc.cat/display/SII/PCI3+-+WL12+-+Desplegament">URL de ejemplo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contraseñas" class="tab-content">
+        <div class="warning-box">
+            <p><strong>¡Atención!</strong> La información guardada puede perderse si se borra la caché del navegador, el historial, las cookies o si se resetea el navegador.
+            <button class="backup-button" data-tab="contraseñas">Backup Credenciales</button></p>
+        </div>
+        <h1>Contraseñas</h1>
+        <table id="password-table">
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Contraseña</th>
+                    <th>URL</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las filas de contraseñas se agregarán aquí -->
+            </tbody>
+        </table>
+        <br>
+        <button id="show-add-password-form">Añadir Contraseña</button>
+        <button id="delete-all-passwords" class="delete-all-passwords">Borrar todo</button>
+        <form id="add-password-form" style="display: none;">
+            <h2>Añadir nueva contraseña</h2>
+            <label for="new-username">Usuario:</label>
+            <input type="text" id="new-username" required><br>
+            <label for="new-password">Contraseña:</label>
+            <input type="password" id="new-password" required><br>
+            <label for="new-url">URL:</label>
+            <input type="url" id="new-url" required><br>
+            <button type="button" id="add-password">Añadir contraseña</button>
+        </form>
+        <form id="edit-password-form" style="display: none;">
+            <h2>Editar Credencial</h2>
+            <input type="hidden" id="edit-index">
+            <label for="edit-username">Usuario:</label>
+            <input type="text" id="edit-username"><br>
+            <label for="edit-password">Contraseña:</label>
+            <input type="text" id="edit-password"><br>
+            <button type="button" id="save-edit">Editar</button>
+        </form>
+    </div>
+
+    <!-- Sección Daily -->
+<div id="daily" class="tab-content">
+    <h1>Daily</h1>
+    <table id="daily-table">
+        <thead>
+            <tr>
+                <th>TAREA</th>
+                <th>JIRA</th>
+                <th>COMENTARIO</th>
+                <th>PROGRESO</th>
+                <th>HORAS DEDICADAS</th>
+                <th>ACCIONES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Las filas se agregarán aquí dinámicamente -->
+        </tbody>
+    </table>
+    <br>
+<div class="buttons-container">
+    <button id="add-task-button">Añadir Tarea</button>
+    <button id="export-excel">Exportar a Excel</button>
+    <button id="delete-all-tasks">Borrar todo</button>
+    <button id="tareas-mensuales">Tareas Mensuales</button>
+    <button id="imputar-horas">Imputar Horas</button>
+</div>
+    <form id="add-task-form" style="display: none;">
+        <h2>Añadir nueva tarea</h2>
+        <input type="hidden" id="task-index">
+        <label for="new-task">Tarea:</label>
+        <input type="text" id="new-task" required><br>
+        <label for="new-jira">JIRA:</label>
+        <input type="url" id="new-jira"><br>
+        <label for="new-comment">Comentario:</label>
+        <input type="text" id="new-comment"><br>
+        <button type="button" id="save-task">Guardar</button>
+    </form>
+</div>
+
+
+</div>
+
+<script src="js/scripts.js"></script>
+<script src="js/scriptsHyS.js"></script>
+<script src="js/jsDaily.js"></script>
+<!-- Incluye SheetJS en tu HTML -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+</body>
+</html>
