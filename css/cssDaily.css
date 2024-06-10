@@ -1,0 +1,175 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+td {
+    color: #333;
+}
+
+/* Estilos del campo de horas */
+.horas-input {
+    width: 70px; /* Aumenta el ancho para incluir todos los caracteres */
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    font-family: monospace;
+}
+
+/* Estilos del formulario */
+#add-task-form {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#add-task-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#add-task-form input,
+#add-task-form button {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#add-task-form button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+#add-task-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos de los botones */
+.buttons-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add-task-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#add-task-button:hover {
+    background-color: #218838;
+}
+
+#export-excel {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+#export-excel:hover {
+    background-color: #138496;
+}
+
+#delete-all-tasks {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+#delete-all-tasks:hover {
+    background-color: #c82333;
+}
+
+#tareas-mensuales {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+#tareas-mensuales:hover {
+    background-color: #5a6268;
+}
+
+#imputar-horas {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+#imputar-horas:hover {
+    background-color: #5a6268;
+}
+
+/* Estilos del progreso */
+.progreso-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.progreso-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.no-empezado {
+    background-color: #dc3545; /* Rojo */
+}
+
+.en-progreso {
+    background-color: #ffc107; /* Amarillo */
+}
+
+.realizado {
+    background-color: #28a745; /* Verde */
+}
+
+.pospuesto {
+    background-color: #6c757d; /* Lila/Gris */
+}
+
+.progreso-text {
+    font-size: 0.9em;
+    color: #555;
+}

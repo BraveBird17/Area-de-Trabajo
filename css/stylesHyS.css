@@ -1,0 +1,91 @@
+.platform {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.platform-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.platform-logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.platform-header img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.platform-content {
+    padding: 10px;
+}
+
+.platform-tabs {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.platform-tab {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+
+.platform-tab.active {
+    background-color: #0056b3;
+}
+
+.platform-tab-content {
+    display: none;
+}
+
+.platform-tab-content.active {
+    display: block;
+}
+
+.platform-tab-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.platform-tab-content ul li {
+    margin-bottom: 5px;
+}
+
+.platform-tab-content ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.platform-tab-content ul li a:hover {
+    text-decoration: underline;
+}
+
+.toggle-expand {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.toggle-expand .fas {
+    transition: transform 0.3s;
+}
+
+.platform-header.active .fas {
+    transform: rotate(180deg);
+}

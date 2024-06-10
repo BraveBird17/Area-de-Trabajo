@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+}
+
+/* Tab Navigation Styles */
+.tab-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.tab-header {
+    display: flex;
+    align-items: center;
+    background-color: #2c3e50;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.logo-container img {
+    height: 40px;
+    margin: 0 15px;
+}
+
+.tab-link {
+    flex: 1;
+    padding: 15px 20px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.tab-link:hover,
+.tab-link.active {
+    background-color: #34495e;
+}
+
+.tab-content {
+    flex: 1;
+    display: none;
+    padding: 20px;
+    overflow: auto;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Modern Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+th {
+    background-color: #f4f6f9;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #34495e;
+    font-weight: bold;
+}
+
+td {
+    background-color: #fff;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+tr:hover td {
+    background-color: #f1f1f1;
+}
+
+/* Action Buttons Styles */
+button,
+.access-button,
+.show-button,
+.hide-button,
+.edit-button,
+.delete-button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.access-button {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.access-button:hover {
+    background-color: #2980b9;
+}
+
+.show-button,
+.hide-button {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.show-button:hover,
+.hide-button:hover {
+    background-color: #229954;
+}
+
+.edit-button {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.edit-button:hover {
+    background-color: #e67e22;
+}
+
+.delete-button {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}
+
+/* Icon Buttons Styles */
+.button-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 5px;
+}
+
+.button-icon i {
+    font-size: 16px;
+    vertical-align: middle;
+    color: #2c3e50;
+}
+
+.button-icon i:hover {
+    color: #2980b9;
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: calc(100% - 120px);
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Warning Box Styles */
+.warning-box {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.backup-button {
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #e74c3c;
+    border: 2px solid #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.backup-button:hover {
+    background-color: #fff;
+    color: #e74c3c;
+    border: 2px solid #e74c3c;
+}
+
+/* General Button Styles */
+button,
+.access-button,
+.show-button,
+.hide-button,
+.edit-button,
+.delete-button {
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.add-button,
+.export-button {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.add-button:hover,
+.export-button:hover {
+    background-color: #27ae60;
+}
