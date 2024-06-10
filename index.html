@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/stylesHyS.css">
     <link rel="stylesheet" href="css/cssDaily.css">
+	<link rel="stylesheet" id="contraseñas-style" href="#" disabled>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	
 </head>
@@ -78,24 +79,26 @@
         <button id="show-add-password-form">Añadir Contraseña</button>
         <button id="delete-all-passwords" class="delete-all-passwords">Borrar todo</button>
         <form id="add-password-form" style="display: none;">
-            <h2>Añadir nueva contraseña</h2>
-            <label for="new-username">Usuario:</label>
-            <input type="text" id="new-username" required><br>
-            <label for="new-password">Contraseña:</label>
-            <input type="password" id="new-password" required><br>
-            <label for="new-url">URL:</label>
-            <input type="url" id="new-url" required><br>
-            <button type="button" id="add-password">Añadir contraseña</button>
-        </form>
+    <h2>Añadir nueva contraseña</h2>
+    <label for="new-username">Usuario:</label>
+    <input type="text" id="new-username" required><br>
+    <label for="new-password">Contraseña:</label>
+    <input type="password" id="new-password" required><br>
+    <label for="new-url">URL:</label>
+    <input type="url" id="new-url" required><br>
+    <button type="button" id="add-password">Añadir contraseña</button>
+</form>
         <form id="edit-password-form" style="display: none;">
-            <h2>Editar Credencial</h2>
-            <input type="hidden" id="edit-index">
-            <label for="edit-username">Usuario:</label>
-            <input type="text" id="edit-username"><br>
-            <label for="edit-password">Contraseña:</label>
-            <input type="text" id="edit-password"><br>
-            <button type="button" id="save-edit">Editar</button>
-        </form>
+    <h2>Editar Credencial</h2>
+    <input type="hidden" id="edit-index">
+    <label for="edit-username">Usuario:</label>
+    <input type="text" id="edit-username"><br>
+    <label for="edit-password">Contraseña:</label>
+    <input type="text" id="edit-password"><br>
+    <label for="edit-url">URL:</label>
+    <input type="text" id="edit-url"><br>
+    <button type="button" id="save-edit">Guardar cambios</button>
+</form>
     </div>
 
     <!-- Sección Daily -->
@@ -143,6 +146,7 @@
 <script src="js/scripts.js"></script>
 <script src="js/scriptsHyS.js"></script>
 <script src="js/jsDaily.js"></script>
+<script src="js/contraseñas.js"></script>
 <!-- Incluye SheetJS en tu HTML -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
 </body>
