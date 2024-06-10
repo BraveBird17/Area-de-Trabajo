@@ -1,4 +1,6 @@
-# Area-de-Trabajo
+# Creating the README.md file with the provided content
+
+readme_content = """
 # Gestor de Marcadores y Tareas
 
 Este proyecto proporciona una interfaz web para la gestión de contraseñas, la organización de tareas diarias, y el acceso a diversas plataformas. Está diseñado para permitir a los usuarios agregar, editar y eliminar contraseñas, gestionar tareas diarias con un sistema de progreso y registrar el tiempo dedicado.
@@ -32,17 +34,17 @@ Asegúrate de tener los siguientes requisitos antes de comenzar:
 ### Pasos
 
 1. **Clona el repositorio**:
-    ```bash
+    \`\`\`bash
     git clone https://github.com/tu-usuario/gestor-marcadores.git
-    ```
+    \`\`\`
 
 2. **Navega al directorio del proyecto**:
-    ```bash
+    \`\`\`bash
     cd gestor-marcadores
-    ```
+    \`\`\`
 
-3. **Abre `index.html` en tu navegador**:
-    Puedes hacer doble clic en `index.html` o abrirlo manualmente desde tu navegador.
+3. **Abre \`index.html\` en tu navegador**:
+    Puedes hacer doble clic en \`index.html\` o abrirlo manualmente desde tu navegador.
 
 ## Uso
 
@@ -72,21 +74,23 @@ Asegúrate de tener los siguientes requisitos antes de comenzar:
 
 ## Estructura del Proyecto
 
+\`\`\`
 gestor-marcadores/
 ├── css/
-│ ├── styles.css # Estilos generales del proyecto
-│ ├── cssDaily.css # Estilos específicos para la pestaña Daily
-│ └── contraseñas.css # Estilos específicos para la pestaña Contraseñas
+│   ├── styles.css          # Estilos generales del proyecto
+│   ├── cssDaily.css        # Estilos específicos para la pestaña Daily
+│   └── contraseñas.css     # Estilos específicos para la pestaña Contraseñas
 ├── js/
-│ ├── scripts.js # Scripts generales del proyecto
-│ ├── jsDaily.js # Scripts específicos para la pestaña Daily
-│ └── contraseñas.js # Scripts específicos para la pestaña Contraseñas
+│   ├── scripts.js          # Scripts generales del proyecto
+│   ├── jsDaily.js          # Scripts específicos para la pestaña Daily
+│   └── contraseñas.js      # Scripts específicos para la pestaña Contraseñas
 ├── images/
-│ ├── NTT_Data-Logo.wine.png # Logo de la empresa
-│ ├── wl12.png # Imagen para el expandir de WL12
-│ ├── Apache_Tomcat_logo.svg.png # Imagen para expandir de Tomcat
-│ └── [otras imágenes] # Otras imágenes utilizadas en el proyecto
-├── index.html # Página principal del proyecto
+│   ├── NTT_Data-Logo.wine.png   # Logo de la empresa
+│   ├── wl12.png                  # Imagen para el expandir de WL12
+│   ├── Apache_Tomcat_logo.svg.png  # Imagen para expandir de Tomcat
+│   └── [otras imágenes]          # Otras imágenes utilizadas en el proyecto
+├── index.html                 # Página principal del proyecto
+\`\`\`
 
 ## Contribuciones
 
@@ -94,4 +98,9 @@ Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request p
 
 ## Licencia
 
-Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+Este proyecto está bajo la Licencia MIT. Consulta el archivo \`LICENSE\` para más detalles.
+"""
+
+# Write the content to README.md
+with open("/mnt/data/README.md", "w") as file:
+    file.write(readme_content)
